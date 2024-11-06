@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Catálogo de Vehículos{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1>Bienvenido al Catálogo de Vehículos</h1>
+    <p>Aquí puedes ver el listado de vehículos disponibles y agregar nuevos vehículos al catálogo.</p>
+
+    <div class="mt-4">
+        <a href="{% url 'agregar_vehiculo' %}" class="btn btn-primary">Agregar Nuevo Vehículo</a>
+    </div>
+
+</div>
+{% endblock %}
